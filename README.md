@@ -1,5 +1,5 @@
 # Face Recognition
-Tugas Besar 2 IF 2123 Aljabar Linier dan Geometri
+Tugas Project Based Learning IF 2024 Aljabar Linier 
 <br />
 Aplikasi Nilai Eigen dan EigenFace pada Pengenalan Wajah (Face Recognition) 
 
@@ -12,79 +12,47 @@ Aplikasi Nilai Eigen dan EigenFace pada Pengenalan Wajah (Face Recognition)
 * [Credits](#credits)
 
 ## General Information
-Pengenalan wajah (Face Recognition) adalah teknologi biometrik yang bisa dipakai untuk mengidentifikasi wajah seseorang untuk berbagai kepentingan khususnya keamanan. Program pengenalan wajah melibatkan kumpulan citra wajah yang sudah disimpan pada database lalu berdasarkan kumpulan citra wajah tersebut, program dapat mempelajari bentuk wajah lalu mencocokkan antara kumpulan citra wajah yang sudah dipelajari dengan citra yang akan diidentifikasi.
+Teknologi pengenalan wajah (face recognition) sebagai salah satu bentuk biometrik yang sangat berguna untuk mengidentifikasi identitas seseorang, terutama dalam konteks keamanan. Teknologi ini bekerja dengan cara menyimpan sekumpulan gambar wajah di dalam sebuah basis data. Melalui gambar-gambar tersebut, sistem akan mempelajari pola dan struktur wajah, sehingga nantinya dapat mencocokkannya dengan gambar wajah lain yang ingin dikenali.
 
 ## Tampilan Program
-![Main View](./src/assets/tampilanProgram.jpg)
+![Main View](C:\Users\user\Documents\Face-Recognition\Face-Recognition-main\src\assets)
 
 ## How To Run
 ### Run Using Windows Batch File
 #### Cara 1 (Manual check the dependencies)
 1. Pastikan semua dependencies berikut sudah terinstall
-```shell
-pip install numpy       # dependencies untuk operasi perhitungan
-# and
-pip install opencv      # dependencies untuk Face Recognition
-# and
-pip install tk          # dependencies untuk GUI
-# and
-pip install pillow      # dependencies untuk GUI
-```
-2. Di terminal (cmd), jalankan:
-```shell
-run.bat
-```
-3. Atau double klik pada file `run.bat`
-4. Jika program berhasil dikompilasi, maka akan muncul prompt aplikasi seperti tampilan program di atas.
-
-#### Cara 2 (Auto install dependencies + run)
-1. Pastikan Tkinter sudah terinstal:
-```shell
-pip install tk
-```
-2. Di terminal (cmd), jalankan:
-```shell
-complete_run.bat
-```
-3. Jika program berhasil dikompilasi, maka akan muncul prompt aplikasi seperti tampilan program di atas.
-
-### Run Manually 
-1. Pastikan semua dependencies sudah terinstal.
-```shell
-pip install numpy       # dependencies untuk operasi perhitungan
-# and
-pip install opencv      # dependencies untuk Face Recognition
-# and
-pip install tk          # dependencies untuk GUI
-# and
-pip install pillow      # dependencies untuk GUI
-```
-2. Pastikan anda berada pada dir `src` dengan :
-```shell
+pip install numpy          # Untuk operasi numerik
+pip install opencv-python  # Untuk pengolahan citra & face recognition
+pip install pillow         # Untuk manipulasi gambar
+pip install streamlit      # Untuk membuat tampilan antarmuka (GUI)
+2. Masuk ke direktori src
+shell
+Copy
+Edit
 cd src
-```
-3. Jalankan perintah berikut:
-```shell
-py interface.py
-```
-4. Jika berhasil, maka akan muncul prompt aplikasi seperti pada tampilan program di atas.
+3. Jalankan program dengan Streamlit
+shell
+Copy
+Edit
+streamlit run main.py
+Jika berhasil, aplikasi akan terbuka secara otomatis di browser dengan URL seperti http://localhost:8501.
 
-## Tech Stack
-### Programming Languange
-* Python 3.10.6
+Tech Stack
+Bahasa Pemrograman
+Python 3.10.6
 
-### Libraries
-* OpenCV
-* Numpy
-* Tkinter
-* PIL
+Library & Tools
+Streamlit — Antarmuka pengguna berbasis web
+OpenCV — Deteksi dan pengenalan wajah
+Numpy — Operasi komputasi numerik
+Pillow — Manipulasi gambar
 
-## Project Structure
-```bash
+Struktur Proyek
+bash
+Copy
+Edit
 .
 │   README.md
-│   run.bat
-│   complete_run.bat
 │   requirements.txt
 │   .gitignore
 │
@@ -94,16 +62,16 @@ py interface.py
 │
 ├───src
 │   │   eigenface2.py
-│   │   interface.py
-│   │   main.py
+│   │   main.py         # File utama Streamlit
 │   │
-│   └───assets
+│   └───assets          # Menyimpan gambar, model, dll
 │
 └───test
-```
-
-## Credits
+Credits
 This project is implemented by:
-1. Brian Kheng (13521049)
-2. Jimly Firdaus (13521102)
-3. Marcel Ryan A. (13521127)
+
+Brian Kheng (13521049)
+
+Jimly Firdaus (13521102)
+
+Marcel Ryan A. (13521127)
