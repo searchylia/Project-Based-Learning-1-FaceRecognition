@@ -71,7 +71,5 @@ Credits
 This project is implemented by:
 
 Brian Kheng (13521049)
-
 Jimly Firdaus (13521102)
-
 Marcel Ryan A. (13521127)
